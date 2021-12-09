@@ -1,0 +1,26 @@
+//gcloud compute scp --recurse iPortfolio holilhaqalim@instance-1:web
+
+//sudo pip3 install -r requirements.txt
+
+//#! /bin/bash
+//apt update
+//apt -y install python3-pip
+//apt -y install apache2
+//apt -y install libapache2-mod-wsgi-py3
+//apt -y install default-mysql-server
+
+//restart apache2: sudo service apache2 restart
+//check error log: cat /var/log/apache2/error.log
+
+
+//script inside the /etc/apache2/sites-available/000-default.conf
+
+WSGIScriptAlias / /var/www/html/flask-todo-app/app.wsgi
+<Directory /var/www/html/flask-todo-app>
+Order allow,deny
+Allow from all
+</Directory>
+
+
+
+
